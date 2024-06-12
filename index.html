@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Sujitha">
+        <meta name="Description" content="The Calculator Using html,css and Javascript"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="Cal">
+                <form>
+                    <div class="search">
+                        <input type="text" placeholder="0" name="search">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="search.value = ''" class="op">
+                        <input type="button" value="DEL" onclick="search.value=search.value.toString().slice(0,-1)"  class="op">
+                        <input type="button" value="." onclick="search.value += '.'"  class="op">
+                        <input type="button" value="/" onclick="search.value += '/'"  class="op">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="search.value += '7'">
+                        <input type="button" value="8" onclick="search.value += '8'">
+                        <input type="button" value="9" onclick="search.value += '9'">
+                        <input type="button" value="*" onclick="search.value += '*'" class="op">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="search.value += '4'">
+                        <input type="button" value="5" onclick="search.value += '5'">
+                        <input type="button" value="6" onclick="search.value += '6'">
+                        <input type="button" value="-" onclick="search.value += '-'"   class="op">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="search.value += '1'">
+                        <input type="button" value="2" onclick="search.value += '2'">
+                        <input type="button" value="3" onclick="search.value += '3'">
+                        <input type="button" value="+" onclick="search.value += '+'"  class="op">
+                    </div>
+                    <div>
+                        <input type="button" value="0" onclick="search.value += '0'">
+                        <input type="button" value="00" onclick="search.value += '00'">
+                        <input type="button" value="=" onclick="search.value=eval(search.value)" class="equal  op">
+                    </div>
+            
+            <div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
